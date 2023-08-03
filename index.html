@@ -2,9 +2,11 @@
 <html>
 <head>
 <title>t00n crew</title>
+<link rel="icon" type="image/x-icon" href="https://c-ipfs-gw.nmkr.io/ipfs/QmXF1XPqGovGtko67y8jaB4VHcdYGJxGFDta5q51kaACmV">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- Compilation image styles dependant on screen size -->
 <style>
     @media screen and (max-width: 650px) {
@@ -21,10 +23,10 @@
 <body>
 <!-- Top Bar-->
     <div class="topnav">
-        <a href="#art"><img src="ArtButton.svg" width="24%"></a>
-        <a href="#about"><img src="AboutButton.svg" width="24%"></a>
-        <a href="#submit"><img src="SubmitButton.svg" width="24%"></a>
-        <a href="#contact"><img src="ContactButton.svg" width="24%"></a>
+        <a href ="#art"><img src="ArtButton.svg" class="swapimg visible-desktop" width="24%"><img src="ArtButtonMob.svg" class="swapimg visible-mobile" width="24%"></a>
+        <a href ="#about"><img src="AboutButton.svg" class="swapimg visible-desktop" width="24%"><img src="AboutButtonMob.svg" class="swapimg visible-mobile" width="24%"></a>
+        <a href ="#submit"><img src="SubmitButton.svg" class="swapimg visible-desktop" width="24%"><img src="SubmitButtonMob.svg" class="swapimg visible-mobile" width="24%"></a>
+        <a href ="#contact"><img src="ContactButton.svg" class="swapimg visible-desktop" width="24%"><img src="ContactButtonMob.svg" class="swapimg visible-mobile" width="24%"></a>
     </div>
 
 <!-- Home-->
@@ -36,11 +38,18 @@
         <br>
         <img src="Slogan.svg" class="center-fit" style="width:50% ; max-width:540px;">
         <br>
-        <img src="Breakline.svg" class="center-fit">
     </div>
 
 <!-- Art-->
 <div class="main"id="art">
+    <br>
+    <br>
+    <br>
+    <img src="Breakline.svg" class="center-fit"> 
+    <br>
+    <br>
+    <br>
+    
     <!-- Row 1-->
     <div class="row">
         <div class="column">
@@ -295,7 +304,10 @@
 
 
 <!-- About-->
-<div class="main"id="about">  
+<div class="main"id="about"> 
+     <br> 
+     <br>
+     <br>
     <img src="Breakline.svg" class="center-fit">  
     <br>
     <img src="About.svg" class="center-fit">
@@ -343,11 +355,13 @@
 
 <!-- Submit -->
 <div class="main"id="submit">
+    <br>
+    <br>
+    <br>
     <img src="Breakline.svg" class="center-fit">
     <br>
     <img src="Submit.svg" class="center-fit">
     <h3>Got an idea? Submit it below!</h3>
-    <br>
     <br>
     <div class="container2">
         <form action="https://formsubmit.co/c69eb22ce69e07877a94c880fa334bab" method="POST">
@@ -362,11 +376,12 @@
           <input type="text" id="prompt" name="prompt" placeholder="A small sentance about the character e.g. A mushroom tripping..."   required>
       
           <label for="addr">Wallet Address</label>
-          <input type="text" id="addr" name="addr" placeholder="A non-exchange Cardano wallet address or Handle..."   required>
+          <input type="text" id="addr" name="addr" placeholder="A non-exchange Cardano wallet address or Handle...(optional)" >
           
           <label for="tweeter">Twitter</label>
           <input type="text" id="tweeter" name="tweeter" placeholder="A form of contact...(optional)" >
       
+          <br>
           <input type="submit" value="Submit">
       
         </form>
@@ -381,14 +396,64 @@
 </div>
 
 <div class="main"id="contact">
+    <br>
+    <br>
+    <br>
     <img src="Breakline.svg" class="center-fit">
     <br>
     <img src="Contact.svg" class="center-fit">
     <h3>For any queries, questions and collaborations, hit me up!</h3>
     <br>
-    <br>
-</div>
+    <div class="container2">
+        <form action="https://formsubmit.co/c69eb22ce69e07877a94c880fa334bab" method="POST">
 
+          <input type="text" name="_poohjuice" style="display: none;">
+          <input type="hidden" name="_captcha" value="false">
+      
+          <label for="pname">Name</label>
+          <input type="text" id="pname" name="pname" placeholder="Your first and last name..."   required>
+      
+          <label for="prompt">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="The subject of your enquiry..."   required>
+      
+          <label for="details">Details</label>
+          <input type="text" id="details" name="details" placeholder="All the juicy deets..."   required>
+          
+          <label for="contactinfo">Contact Info</label>
+          <input type="text" id="contactinfo" name="contactinfo" placeholder="A form of contact (preferably email)" required>
+      
+          <br>
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
+</div>
+<br>
+<br>
+<br>
+
+    <!-- Footer -->
+  <!-- Site footer -->
+  <div class="main"id="footer">
+    <img src="Breakline.svg" class="center-fit">
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+          <p class="copyright-text">BUILT BY  
+       <a style="text-decoration:none; font-size: 3.5vmin;" href="https://twitter.com/B1llyArt">B1LLY</a>
+          </p>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+             <!-- <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>-->
+            <li><a class="twitter" href="https://twitter.com/B1llyArt"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="https://dribbble.com/B1llyArt"><i class="fa fa-dribbble"></i></a></li>
+              <!--<li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>-->   
+          </ul>
+        </div>
+      </div>
+    </div>
+</div>
+</footer>
 <script src="scripts.js"></script>
 </body>
 </html>
