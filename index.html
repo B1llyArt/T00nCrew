@@ -5,6 +5,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="styles.css">
+<!-- Compilation image styles dependant on screen size -->
+<style>
+    @media screen and (max-width: 650px) {
+        .swapimg {display: none;}
+        .visible-mobile {display: inline;}
+    }
+    @media screen and (min-width: 651px) {
+        .swapimg {display: none;}
+        .visible-desktop {display: inline;}
+    }
+</style>
 
 </head>
 <body>
@@ -20,9 +31,10 @@
     <div class="main"id="home">  
         <img src="T00nTitle.svg" class="center-fit">
         <br>
-        <img src="Compilation.png"  class="center-fit">
+
+        <img src="Compilation.png" class="swapimg visible-desktop center-fit"><img src="CompilationMobile.png" class="swapimg visible-mobile center-fit"></div>
         <br>
-        <img src="Slogan.svg" class="center-fit" style="width:50% ; max-width:540px">
+        <img src="Slogan.svg" class="center-fit" style="width:50% ; max-width:540px;">
         <br>
         <img src="Breakline.svg" class="center-fit">
     </div>
@@ -286,7 +298,7 @@
 <div class="main"id="about">  
     <img src="Breakline.svg" class="center-fit">  
     <br>
-    <img src="WotsitAbout.svg" class="center-fit">
+    <img src="About.svg" class="center-fit">
     <h3>T00n crew is an art collection featuring a cast of characters based on prompts from you.</h3>
     <br>
     <button class="accordion center-fit" >Why tho?</button>
@@ -327,15 +339,21 @@
 </div>
 <br>
 <br>
-<img src="Breakline.svg" class="center-fit">
 </div>
-
-
 
 <!-- Submit -->
 <div class="main"id="submit">
+    <img src="Breakline.svg" class="center-fit">
+    <br>
+    <img src="Submit.svg" class="center-fit">
+    <h3>Got an idea? Submit it below!</h3>
+    <br>
+    <br>
     <div class="container2">
         <form action="https://formsubmit.co/c69eb22ce69e07877a94c880fa334bab" method="POST">
+
+          <input type="text" name="_poohjuice" style="display: none;">
+          <input type="hidden" name="_captcha" value="false">
       
           <label for="cname">Character Name</label>
           <input type="text" id="cname" name="charactername" placeholder="The characters name..."   required>
@@ -360,6 +378,15 @@
 
     
 
+</div>
+
+<div class="main"id="contact">
+    <img src="Breakline.svg" class="center-fit">
+    <br>
+    <img src="Contact.svg" class="center-fit">
+    <h3>For any queries, questions and collaborations, hit me up!</h3>
+    <br>
+    <br>
 </div>
 
 <script src="scripts.js"></script>

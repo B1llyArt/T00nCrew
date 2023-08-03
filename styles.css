@@ -6,6 +6,7 @@
 }
 
 
+
 /* Nav bar Elements */
 /* Add a black background color to the top navigation */
 .topnav {
@@ -37,6 +38,7 @@
   max-width:1080px
   
 }
+
 
 .center-fit {
   display: block;
@@ -91,27 +93,37 @@
 
 a {
   font-family: "Winkle", sans-serif;
-  font-size: 1.5em;
+  font-size: 2vmin;
 }
 
 p {
   font-family: "Winkle", sans-serif;
-  font-size: 1.5em;
+  font-size: 3vmin;
+}
+
+h1 {
+  font-family: "Winkle", sans-serif;
+  font-size: 5.9vw;
 }
 
 h2 {
   font-family: "Winkle", sans-serif;
-  font-size: 2em;
+  font-size: 3.0vh;
+}
+
+h3{
+  font-family: "Winkle", sans-serif;
+  font-size: 2.0vh;
 }
 
 li {
   font-family: "Winkle", sans-serif;
-  font-size: 1.5em;
+  font-size: 3vmin;
 }
 
 h3 {
   font-family: "Winkle", sans-serif;
-  font-size: 2em;
+  font-size: 2.9vh;
   margin-right: 15%;
   margin-left: 15%;
   text-align: center;
@@ -132,7 +144,7 @@ h3 {
   outline: none;
   transition: 0.4s;
   font-family: "Winkle", sans-serif;
-  font-size: 1.8em;
+  font-size: 4vmin;
   text-transform: uppercase;
 }
 
@@ -166,27 +178,26 @@ input[type=text], select, textarea {
   margin-bottom: 16px; /* Bottom margin */
   resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
   font-family: "Winkle", sans-serif;
-  font-size: 0.7em;
+  font-size: 3vmin;
 }
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
+  background-color: #ffffff;
+  background-image: url("SubmitButton.svg");
+  color: rgba(255, 255, 255, 0);
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 185px;
+  height: 30px;
   border: none;
-  border-radius: 4px;
   cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #45a049;
-}
 
 .container2{
   font-family: "Winkle", sans-serif;
-  font-size: 1.8em;
+  font-size: 4vmin;
   text-transform: uppercase;
   display: block;
   margin-left: auto;
